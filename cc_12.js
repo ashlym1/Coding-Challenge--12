@@ -26,4 +26,37 @@ dashboardById.appendChild(revenueCard);
         card.style.backgroundColor = "mintcream";
   });
 
+  // Task 3: Dynamic Inventory Management - Adding and Removing Items 
+    // Adding  a product to the inventory list
+function addInventoryItem(productName) {
+    const inventoryList = document.getElementById("inventoryList");  // selecting  the inventory list
+    const productItem = document.createElement("li");  // created a  list item
+    productItem.setAttribute("class", "product-item");  // added a  class for styling
+    productItem.innerText = productName;  // set product name as text
+
+    // Add click event to remove the item when clicked
+    productItem.addEventListener("click", () => {
+        removeProductItem(productItem);  // call removes function when clicked
+    });
+
+    inventoryList.appendChild(productItem);  // added item to the list
+};
+
+// removing the  product item from the list
+function removeProductItem(item) {
+    const inventoryList = document.getElementById("inventoryList");
+    inventoryList.removeChild(item);  // removes the clicked item
+};
+
+// Test case: adding products 
+addInventoryItem("Ceremonial Matcha");
+addInventoryItem("Matcha Whisk Set");
+
+// Test case 2:  button listener 
+document.getElementById("addProductButton").addEventListener("click", () => {
+    addInventoryItem("New Product");  // 
+});
+
+
+
 
