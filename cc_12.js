@@ -13,10 +13,14 @@ function createMetricCard(id, title) {
     return card;
 }
 
-// Added 3 metric cards
+// Added 3 metric cards and it's values 
 dashboardById.appendChild(createMetricCard("revenueCard", "Revenue"));
 dashboardById.appendChild(createMetricCard("profitCard", "Profit"));
 dashboardById.appendChild(createMetricCard("expensesCard", "Expenses"));
+// value: 
+document.getElementById("revenueCard").querySelector("p").innerText = "$160";
+document.getElementById("profitCard").querySelector("p").innerText = "$100";
+document.getElementById("expensesCard").querySelector("p").innerText = "$90";
 
 // Task 2: Updating Dashboard Metrick 
 const metricCards = document.querySelectorAll(".metric-card"); // selected all metric cards
