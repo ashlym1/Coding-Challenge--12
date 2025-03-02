@@ -57,6 +57,24 @@ document.getElementById("addProductButton").addEventListener("click", () => {
     addInventoryItem("New Product");  // 
 });
 
+// Task 4 - business customer section
+// Selecting the customer section 
+const customerSection = document.getElementById("customerSection");
+customerSection.addEventListener("click", () => {
+    console.log("This item has been selected (parent container)");
+}); // Added an  event listener to the parent container
+
+// Selecting all customer cards
+const customerCards = document.querySelectorAll(".customer-card");
+
+// Added click events to each customer card
+customerCards.forEach((card) => {
+    card.addEventListener("click", (event) => {
+        console.log("This card has been selected");  //  logs when a card is clicked
+        event.stopPropagation();  // Stops the parent container's click event from going off 
+    });
+});
+
 
 
 
