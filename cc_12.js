@@ -13,7 +13,7 @@ function createMetricCard(id, title) {
     return card;
 }
 
-// Added 3 metric cards and it's values 
+// Added 3 metric cards and the basic starting values 
 dashboardById.appendChild(createMetricCard("revenueCard", "Revenue"));
 dashboardById.appendChild(createMetricCard("profitCard", "Profit"));
 dashboardById.appendChild(createMetricCard("expensesCard", "Expenses"));
