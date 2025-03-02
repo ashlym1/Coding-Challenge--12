@@ -87,7 +87,7 @@ customers.forEach((name) => {
 
     customerSection.appendChild(customerCard);  // Add to the customer section
 });
-
+// **making sure I push everything correctly 
 
 
 
