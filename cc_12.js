@@ -55,7 +55,7 @@ addInventoryItem("Matcha Whisk Set");
 
 // adding  the product button  
 document.getElementById("addProductButton").addEventListener("click", () => {
-    addInventoryItem("New Product");  // 
+    addInventoryItem("Miffy Exclusive: Matcha Whisk Set");  // 
 });
 
 // Task 4 - business customer section - event bubbling 
